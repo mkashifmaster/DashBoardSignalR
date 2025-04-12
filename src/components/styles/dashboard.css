@@ -1,0 +1,31 @@
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.windows-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 24px; /* Increased gap between windows */
+  margin-top: 24px;
+}
+
+.data-window {
+  min-width: 0; /* Allows content to constrain the width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .windows-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .windows-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
