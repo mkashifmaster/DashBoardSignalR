@@ -4,8 +4,6 @@ import './components/styles/dashboard.css';
 import './components/styles/window.css';
 
 function App() { 
-
-  
   return (
     <div className="app">
       <DashboardContainer />
